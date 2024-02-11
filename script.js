@@ -123,7 +123,6 @@ let showWeather = (weather, searchQuery) => {
   cityEl.textContent = searchQuery;
   iconEl = weather.weather[0].icon;
   document.getElementById("todayIcon")
-    .src = "./assets/css/icons/" + iconEl + ".png"; // changeout icon set in future, here and forecast
   document.getElementById("todayTemp")
     .innerHTML = weather.main.temp;
   document.getElementById("todayHumidity")
@@ -167,7 +166,6 @@ let showForecast = (forecast, searchQuery) => {
     .innerHTML = forecast.list[4].main.humidity;
   iconEl1 = forecast.list[4].weather[0].icon;
   document.getElementById("i1")
-    .src = "./assets/css/icons/" + iconEl1 + ".png";
   // 2 of 5
   document.getElementById("t2")
     .innerHTML = forecast.list[12].main.temp;
@@ -175,15 +173,13 @@ let showForecast = (forecast, searchQuery) => {
     .innerHTML = forecast.list[12].main.humidity;
   iconEl2 = forecast.list[12].weather[0].icon;
   document.getElementById("i2")
-    .src = "./assets/css/icons/"  + iconEl2 + ".png";
   // 3 of 5
   document.getElementById("t3")
     .innerHTML = forecast.list[20].main.temp;
   document.getElementById("h3")
     .innerHTML = forecast.list[20].main.humidity;
   iconEl3 = forecast.list[20].weather[0].icon;
-  document.getElementById("i3")
-    .src = "./assets/css/icons/" + iconEl3 + ".png";
+  document.getElementById("i3");
   // 4 of 5
   document.getElementById("t4")
     .innerHTML = forecast.list[28].main.temp;
@@ -191,7 +187,6 @@ let showForecast = (forecast, searchQuery) => {
     .innerHTML = forecast.list[28].main.humidity;
   iconEl4 = forecast.list[28].weather[0].icon;
   document.getElementById("i4") 
-    .src = "./assets/css/icons/" + iconEl4 + ".png";
   // 5 of 5
   document.getElementById("t5")
     .innerHTML = forecast.list[36].main.temp;
@@ -199,7 +194,6 @@ let showForecast = (forecast, searchQuery) => {
     .innerHTML = forecast.list[36].main.humidity;
   iconEl5 = forecast.list[36].weather[0].icon;
   document.getElementById("i5")
-    .src = "./assets/css/icons/" + iconEl5 + ".png";
   // end 5 day Forecast
 };
 
@@ -210,5 +204,5 @@ listCity();
 addList();
 
 // OPEN WITH DEFAULT VALUES
-getWeather("Berkeley");
-getForecast("Berkeley");
+getWeather("Toronto");
+getForecast("Toronto");

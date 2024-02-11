@@ -10,9 +10,8 @@
    @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
    </style>
    <meta name="description" content="Weather application made for UCB's bootcamp with Open Weather API." />
-   <link rel="stylesheet" href="./assets/css/style.css" />
+   <link rel="stylesheet" href="./style.css" />
 
-  <link rel="shortcut icon" href="./assets/images/wind.png">
    <title>Open Weather API Application </title>
 </head>
 
@@ -49,7 +48,6 @@
                      <div class="card todayBlock">
                         <h5> <span id="searchedCity"></span></h5>
                         <h6><span id="todayDate"></span></h6>
-                        <img id="todayIcon" src="" style="margin-left:45%;">
                         <p><strong>Temperature: </strong><span id="todayTemp"></span> °F</p>
                         <p><strong>Humidity: </strong><span id="todayHumidity"></span>%</p>
                         <p><strong>Wind Speed: </strong><span id="todayWind"></span> mph</p>
@@ -66,7 +64,6 @@
                      <div class="col-sm-2">
                         <div class="card card5day">
                            <h6 id="day1"></h6>
-                           <img id="i1" src="" style="margin-left:20%">
                            <p><strong>Temp:</strong> <span id="t1"></span> °F</p>
                            <p><strong>Humidity:</strong> <span id="h1"></span>%</p>
                         </div>
@@ -75,7 +72,6 @@
                      <div class="col-sm-2">
                         <div class="card card5day">
                            <h6 id="day2"></h6>
-                           <img id="i2" src="" style="margin-left:20%">
                            <p><strong>Temp:</strong> <span id="t2"></span> °F</p>
                            <p><strong>Humidity:</strong> <span id="h2"></span>%</p>
                         </div>
@@ -84,7 +80,6 @@
                      <div class="col-sm-2">
                         <div class="card card5day">
                            <h6 id="day3"></h6>
-                           <img id="i3" src="" style="margin-left:20%">
                            <p><strong>Temp:</strong> <span id="t3"></span> °F</p>
                            <p><strong>Humidity:</strong> <span id="h3"></span>%</p>
                         </div>
@@ -93,7 +88,6 @@
                      <div class="col-sm-2">
                         <div class="card card5day">
                            <h6 id="day4"></h6>
-                           <img id="i4" src="" style="margin-left:20%">
                            <p><strong>Temp: </strong><span id="t4"></span> °F</p>
                            <p><strong>Humidity:</strong> <span id="h4"></span>%</p>
                         </div>
@@ -102,7 +96,6 @@
                      <div class="col-sm-2">
                         <div class="card card5day">
                            <h6 id="day5"></h6>
-                           <img id="i5" src="" style="margin-left:20%">
                            <p><strong>Temp:</strong> <span id="t5"></span> °F</p>
                            <p><strong>Humidity:</strong> <span id="h5"></span>%</p>
                         </div>
@@ -116,7 +109,7 @@
          <!--Scripts: Moment, jQuery, JS-->
          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-         <script src="./assets/js/script.js"></script>
+         <script src="./script.js"></script>
 </body>
 
 </html>
