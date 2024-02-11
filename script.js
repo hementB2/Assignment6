@@ -11,7 +11,7 @@ let cityEl = document.querySelector("#searchedCity"); // city as displayed
 // GET WEATHER FOR TODAY DISPLAY
 // My API Key: 4204bfdd6f4f063ef67429ec56df1142
 let getWeather = (city) => {
-  let apiURL1 = "://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=4204bfdd6f4f063ef67429ec56df1142";
+  let apiURL1 = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=4204bfdd6f4f063ef67429ec56df1142";
   fetch(apiURL1)
     .then((response) => {
         response.json()
@@ -24,7 +24,7 @@ let getWeather = (city) => {
 
 // GET 5-DAY FORECAST + UV DATA
 let getForecast = (city) => {
-  let apiURL3 = "://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=4204bfdd6f4f063ef67429ec56df1142";
+  let apiURL3 = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=4204bfdd6f4f063ef67429ec56df1142";
   fetch(apiURL3)
     .then((response) => {
       response.json()
@@ -36,7 +36,7 @@ let getForecast = (city) => {
           let lon = data.city.coord.lon;
           // GET UV DATA BASED ON CITY LAT/LON COORDINATES
           let getTodayUV = (city) => {
-            let apiURL2 = "://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=4204bfdd6f4f063ef67429ec56df1142";
+            let apiURL2 = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=4204bfdd6f4f063ef67429ec56df1142";
             fetch(apiURL2)
               .then((response) => {
                 response.json()
